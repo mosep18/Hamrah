@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#193d32">
+  <meta name="description" content="همراه؛ راهنمای آفلاین ایمنی، آمادگی در بحران، ارتباطات و ابزارهای کاربردی.">
+  <meta name="color-scheme" content="light dark">
+  <title>همراه — راهنمای روزهای دشوار</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="./" data-screen="home" aria-label="همراه، خانه">
+      <img class="brand-icon" src="./icons/icon-192.png" alt="" width="42" height="42">
+      <span class="brand-copy"><strong>همراه</strong><small>راهنمای آفلاین</small></span>
+    </a>
+    <div class="header-actions">
+      <span class="connection" id="connectionStatus"><i></i><span>در حال بررسی</span></span>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="تغییر پوسته" title="تغییر پوسته">◐</button>
+      <button class="install-button" id="installButton" type="button" hidden>نصب</button>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="بخش‌های اصلی">
+    <button type="button" data-screen="home" class="nav-button is-active" aria-current="page">خانه</button>
+    <button type="button" data-screen="safety" class="nav-button">راهنمای ایمنی <span id="navSafetyCount">۱۱</span></button>
+    <button type="button" data-screen="tools" class="nav-button">ابزارها <span id="navToolCount">۲۹</span></button>
+  </nav>
+
+  <main id="main" class="page-shell" tabindex="-1"></main>
+
+  <footer class="app-footer">
+    <p>همراه، یک راهنمای عمومی است؛ نه سامانهٔ هشدار زنده و نه تضمین‌کنندهٔ امنیت منابع بیرونی.</p>
+    <div class="footer-links"><button type="button" data-info="about">دربارهٔ همراه</button><button type="button" data-info="privacy">حریم خصوصی</button><span>نسخهٔ ۰٫۶٫۰</span></div>
+  </footer>
+
+  <dialog id="detailDialog" class="detail-dialog" aria-labelledby="dialogTitle">
+    <button class="close-dialog" type="button" data-close aria-label="بستن">×</button>
+    <div id="dialogBody"></div>
+  </dialog>
+  <dialog id="infoDialog" class="detail-dialog small-dialog" aria-labelledby="infoTitle">
+    <button class="close-dialog" type="button" data-close aria-label="بستن">×</button>
+    <div id="infoBody"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="./config.js"></script>
+  <script src="./data.js"></script>
+  <script src="./safety-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

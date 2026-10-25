@@ -1,0 +1,33 @@
+{
+  "id": "./",
+  "name": "همراه | راهنمای آفلاین",
+  "short_name": "همراه",
+  "description": "راهنمای آفلاین فارسی برای ایمنی، آمادگی در بحران، ارتباطات و ابزارهای کاربردی.",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f2f0e8",
+  "theme_color": "#193d32",
+  "categories": [
+    "utilities",
+    "education",
+    "safety"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
