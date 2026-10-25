@@ -18,28 +18,22 @@
   ],
   "icons": [
     {
-      "src": "./icons/hamrah-icon-192.png",
+      "src": "./icons/icon-192-v062.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "./icons/hamrah-icon-512.png",
+      "src": "./icons/icon-512-v062.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "./icons/hamrah-icon-512.png",
+      "src": "./icons/icon-maskable-512-v062.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
-    },
-    {
-      "src": "./icons/hamrah-icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
     }
   ]
 }

@@ -293,7 +293,7 @@
     } catch { showToast('کپی خودکار ممکن نشد؛ لینک را از جزئیات انتخاب کن.'); }
   }
   function exportTools() {
-    const blob = new Blob([JSON.stringify({ app:'همراه', version:'0.6.0', exportedAt:new Date().toISOString(), note:'منابع فهرست‌شده به معنی تأیید امنیت یا دسترسی نیستند.', tools, safety }, null, 2)], {type:'application/json;charset=utf-8'});
+    const blob = new Blob([JSON.stringify({ app:'همراه', version:'0.6.2', exportedAt:new Date().toISOString(), note:'منابع فهرست‌شده به معنی تأیید امنیت یا دسترسی نیستند.', tools, safety }, null, 2)], {type:'application/json;charset=utf-8'});
     const url = URL.createObjectURL(blob); const anchor = document.createElement('a'); anchor.href=url; anchor.download='hamrah-guide-data.json'; document.body.appendChild(anchor); anchor.click(); anchor.remove(); URL.revokeObjectURL(url); showToast('فهرست آمادهٔ دریافت شد.');
   }
   function openInfo(kind) {
@@ -387,5 +387,5 @@
   $$('.detail-dialog').forEach(dialog => dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); }));
   document.addEventListener('keydown', event => { if (event.key === 'Escape') $$('.detail-dialog[open]').forEach(dialog => dialog.close()); });
   setTheme(state.theme); updateNetworkStatus(); render();
-  if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+  if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then(reg => reg.update()).catch(() => {}));
 })();

@@ -1,5 +1,5 @@
-/* همراه v0.6.0: پوسته و آیکون‌های محلی برای استفادهٔ آفلاین cache می‌شوند. */
-const CACHE_NAME = 'hamrah-shell-v0.6.1';
+/* همراه v0.6.2: آیکون‌های نسخه‌دار و مسیرهای سازگاری برای ارتقای موبایل cache می‌شوند. */
+const CACHE_NAME = 'hamrah-shell-v0.6.2';
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -9,12 +9,28 @@ const APP_SHELL = [
   "./safety-data.js",
   "./app.js",
   "./manifest.webmanifest",
+  "./manifest.webmanifest?v=0.6.2",
   "./favicon.ico",
   "./favicon.svg",
+  "./favicon-v062.ico",
+  "./favicon-v062.svg",
+  "./apple-touch-icon.png",
+  "./apple-touch-icon-v062.png",
+  "./icons/icon.svg",
+  "./icons/icon-32.png",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png",
+  "./icons/icon-maskable-512.png",
+  "./icons/icon-32-v062.png",
+  "./icons/icon-192-v062.png",
+  "./icons/icon-512-v062.png",
+  "./icons/icon-maskable-512-v062.png",
   "./icons/hamrah-icon.svg",
   "./icons/hamrah-icon-192.png",
   "./icons/hamrah-icon-512.png",
+  "./icons/hamrah-icon-maskable-512.png",
   "./icons/favicon-32.png",
+  "./icons/favicon.ico",
   "./README.md",
   "./CHANGELOG.md",
   "./assets/tool-icons/shir-o-khorshid-toolbox.svg",
