@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title>نشان همراه</title><desc>نشان مینیمال همراه با فرم انسانی، برگ سبز و نقطهٔ مرجانی</desc>
+<rect width="512" height="512" fill="#123E34"/>
+<!-- Soft inner halo to keep the mark crisp at small sizes -->
+<circle cx="256" cy="256" r="206" fill="none" stroke="#245548" stroke-width="3"/>
+<!-- Main continuous human/companion mark -->
+<path fill="#F7F4E8" d="M210 78c-68 0-113 45-113 111 0 47 28 79 70 109 26 19 40 35 33 53-6 17-23 32-43 45 52 2 96-20 113-52 20-38-11-65-40-87-33-25-52-44-52-74 0-25 17-42 41-42 24 0 40 18 40 42 0 17-8 30-23 43l64 7c29-26 45-51 45-84 0-43-48-71-135-71z"/>
+<!-- Negative-space face/center cutout -->
+<circle cx="206" cy="190" r="29" fill="#123E34"/>
+<!-- Leaf accent -->
+<path fill="#A9D77D" d="M279 279c23-47 68-75 116-78-9 47-44 82-95 98z"/>
+<path fill="none" stroke="#D1E8B7" stroke-width="5" stroke-linecap="round" d="M292 288c27-26 54-45 83-62" opacity=".8"/>
+<!-- Coral point: a warm, memorable brand detail -->
+<circle cx="363" cy="108" r="25" fill="#FF795D"/>
+</svg>

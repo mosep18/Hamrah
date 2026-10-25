@@ -1,5 +1,5 @@
 /* همراه v0.6.0: پوسته و آیکون‌های محلی برای استفادهٔ آفلاین cache می‌شوند. */
-const CACHE_NAME = 'hamrah-shell-v0.6.0';
+const CACHE_NAME = 'hamrah-shell-v0.6.1';
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -9,9 +9,12 @@ const APP_SHELL = [
   "./safety-data.js",
   "./app.js",
   "./manifest.webmanifest",
-  "./icons/icon.svg",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png",
+  "./favicon.ico",
+  "./favicon.svg",
+  "./icons/hamrah-icon.svg",
+  "./icons/hamrah-icon-192.png",
+  "./icons/hamrah-icon-512.png",
+  "./icons/favicon-32.png",
   "./README.md",
   "./CHANGELOG.md",
   "./assets/tool-icons/shir-o-khorshid-toolbox.svg",
